@@ -5,8 +5,11 @@ public class SumofEvenNo {
 		Scanner scan=new Scanner(System.in);
 		int n=scan.nextInt();
 		int sum=0;
-		for(int i=2;i<=n;i=i+2) {
-			sum=sum+i;
+		for(int i=1;i<=n;i++)
+		{
+			if(i%2==0) {
+				sum=sum+i;
+			}
 		}
 		System.out.println(sum);
 
